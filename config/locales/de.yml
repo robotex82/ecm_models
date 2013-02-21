@@ -17,7 +17,15 @@ de:
       ecm/models/gender: 
         one: Geschlecht
         other: Geschlechter
+      ecm/models/hair_color: 
+        one: Haarfarbe
+        other: Haarfarben
+      ecm/models/skin_type: 
+        one: Hauttyp
+        other: Hauttypen
   resources: 
     ecm_models_categories: model-kategorien
     ecm_models_eye_colors: model-augenfarben
     ecm_models_genders: geschlechter
+    ecm_models_hair_colors: model-haarfarben
+    ecm_models_skin_types: model-hauttypen

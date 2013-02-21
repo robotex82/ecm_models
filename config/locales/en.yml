@@ -12,12 +12,20 @@ en:
         one: category
         other: categories
       ecm/models/eye_color: 
-        one: "eye color"
-        other: "eye colors"
+        one: "hair color"
+        other: "hair colors"
       ecm/models/gender: 
         one: gender
         other: genders
+      ecm/models/hair_color: 
+        one: "hair color"
+        other: "hair colors"
+      ecm/models/skin_type: 
+        one: "skin type"
+        other: "skin typess"
   resources: 
     ecm_models_categories: model-categories
     ecm_models_eye_colors: model-eye-colors
     ecm_models_genders: genders
+    ecm_models_hair_colors: model-hair-colors
+    ecm_models_skin_types: model-skin-types
