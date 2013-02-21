@@ -1,5 +1,5 @@
-class Ecm::Models::Category < ActiveRecord::Base
-  self.table_name = 'ecm_models_categories'
+class Ecm::Models::EyeColor < ActiveRecord::Base
+  self.table_name = 'ecm_models_eye_colors'
 
   # attributes
   attr_accessible :name_de,
@@ -14,4 +14,3 @@ class Ecm::Models::Category < ActiveRecord::Base
                    :presence => true,
                    :uniqueness => true
 end
-

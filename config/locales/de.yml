@@ -1,0 +1,23 @@
+de: 
+  activerecord: 
+    attributes: 
+      ecm/models/category: 
+        name: Name
+      ecm/models/eye_color: 
+        name: Name
+      ecm/models/gender: 
+        name: Name
+    models: 
+      ecm/models/category: 
+        one: Kategorie
+        other: Kategorien
+      ecm/models/eye_color: 
+        one: Augenfarbe
+        other: Augenfarben
+      ecm/models/gender: 
+        one: Geschlecht
+        other: Geschlechter
+  resources: 
+    ecm_models_categories: model-kategorien
+    ecm_models_eye_colors: model-augenfarben
+    ecm_models_genders: geschlechter

@@ -1,6 +1,6 @@
 require 'spec_helper'
 
-describe Ecm::Models::Category do
+describe Ecm::Models::EyeColor do
   describe 'assoications' do
   end # describe 'assoications'
 
@@ -11,3 +11,4 @@ describe Ecm::Models::Category do
     end
   end # describe 'validations'
 end
+

@@ -26,10 +26,11 @@ Gem::Specification.new do |s|
   # Documentation
   s.add_development_dependency "yard"
 
-  # Active admin
+  # Dummy app
   s.add_development_dependency 'activeadmin'
   s.add_development_dependency 'sass-rails'
   s.add_development_dependency 'coffee-rails'
+  s.add_development_dependency 'i18n_routing'
 
   # Localization
   s.add_development_dependency 'localeapp'

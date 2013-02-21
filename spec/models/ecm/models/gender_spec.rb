@@ -1,6 +1,6 @@
 require 'spec_helper'
 
-describe Ecm::Models::Category do
+describe Ecm::Models::Gender do
   describe 'assoications' do
   end # describe 'assoications'
 
