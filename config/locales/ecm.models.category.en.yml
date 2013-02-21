@@ -1,0 +1,13 @@
+---
+en:
+  activerecord:
+    attributes:
+      ecm/models/category:
+        name: name
+    models:
+      ecm/models/category:
+        one: category
+        other: categories
+  resources:
+    ecm_models_categories: model-categories
+

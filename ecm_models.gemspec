@@ -31,6 +31,9 @@ Gem::Specification.new do |s|
   s.add_development_dependency 'sass-rails'
   s.add_development_dependency 'coffee-rails'
 
+  # Localization
+  s.add_development_dependency 'localeapp'
+
   # Tests
   s.add_development_dependency 'capybara'
   s.add_development_dependency 'rspec-rails'
