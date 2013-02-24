@@ -7,6 +7,45 @@ de:
         name: Name
       ecm/models/gender: 
         name: Name
+      ecm/models/hair_color: 
+        name: Name
+      ecm/models/person: 
+        birthdate: Geburtsdatum
+        breast_size: Brustumfang
+        category: Kategorie
+        collar_size: Kragenweite
+        contact_data: Kontaktdaten
+        details: Details
+        email: E-Mail
+        eye_color: Augenfarbe
+        firstname: Vorname
+        gender: Geschlecht
+        german_size: Kleidergröße
+        glasses: Brille
+        hair_color: Haarfarbe
+        hand_size: Handgröße
+        has_braces: Spange
+        has_children: Kinder
+        height: Körpergröße
+        hips_size: Hüftumfang
+        identifier: Identifikator
+        is_pierced: Piercings
+        is_tattooed: Tattoos
+        jeans_length: Jeanslänge
+        jeans_width: Jeansweite
+        lastname: Nachname
+        mobile: Handynummer
+        name: Name
+        personal_data: "Persönliche Angaben"
+        phone: Festnetznummer
+        shoe_size: Schuhgröße
+        sizes: Maße
+        skin_type: Hauttyp
+        visible: "Öffentliches Profil"
+        waist_size: Taillenumfang
+        websites: Webseiten
+      ecm/models/skin_type: 
+        name: Name
     models: 
       ecm/models/category: 
         one: Kategorie
@@ -20,12 +59,20 @@ de:
       ecm/models/hair_color: 
         one: Haarfarbe
         other: Haarfarben
+      ecm/models/person: 
+        one: Model
+        other: Models
       ecm/models/skin_type: 
         one: Hauttyp
         other: Hauttypen
+  ecm: 
+    models: 
+      active_admin: 
+        main_menu: Models
   resources: 
     ecm_models_categories: model-kategorien
     ecm_models_eye_colors: model-augenfarben
     ecm_models_genders: geschlechter
     ecm_models_hair_colors: model-haarfarben
+    ecm_models_people: personen
     ecm_models_skin_types: model-hauttypen

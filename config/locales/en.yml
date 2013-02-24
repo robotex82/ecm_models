@@ -7,6 +7,45 @@ en:
         name: name
       ecm/models/gender: 
         name: name
+      ecm/models/hair_color: 
+        name: name
+      ecm/models/person: 
+        birthdate: birthdate
+        breast_size: "chest measurement"
+        category: category
+        collar_size: "collar size"
+        contact_data: "contact information"
+        details: details
+        email: email
+        eye_color: "eye color"
+        firstname: "first name"
+        gender: gender
+        german_size: "dress size"
+        glasses: "wears glasses"
+        hair_color: "hair color"
+        hand_size: "hand size"
+        has_braces: "has braces"
+        has_children: "has children"
+        height: height
+        hips_size: "hips measurement"
+        identifier: identifier
+        is_pierced: piercings
+        is_tattooed: tattoos
+        jeans_length: "jeans length"
+        jeans_width: "jeans width"
+        lastname: "last name"
+        mobile: "mobile phone"
+        name: name
+        personal_data: "personal data"
+        phone: "land line"
+        shoe_size: "shoe size"
+        sizes: measurements
+        skin_type: "skin type"
+        visible: "public profile"
+        waist_size: "waist measurement"
+        websites: websites
+      ecm/models/skin_type: 
+        name: name
     models: 
       ecm/models/category: 
         one: category
@@ -20,12 +59,20 @@ en:
       ecm/models/hair_color: 
         one: "hair color"
         other: "hair colors"
+      ecm/models/person: 
+        one: person
+        other: people
       ecm/models/skin_type: 
         one: "skin type"
         other: "skin typess"
+  ecm: 
+    models: 
+      active_admin: 
+        main_menu: models
   resources: 
     ecm_models_categories: model-categories
     ecm_models_eye_colors: model-eye-colors
     ecm_models_genders: genders
     ecm_models_hair_colors: model-hair-colors
+    ecm_models_people: people
     ecm_models_skin_types: model-skin-types

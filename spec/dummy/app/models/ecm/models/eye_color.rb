@@ -2,7 +2,8 @@ class Ecm::Models::EyeColor < ActiveRecord::Base
   self.table_name = 'ecm_models_eye_colors'
 
   # attributes
-  attr_accessible :name_de,
+  attr_accessible :name,
+                  :name_de,
                   :name_en,
                   :name_es
 
@@ -13,4 +14,9 @@ class Ecm::Models::EyeColor < ActiveRecord::Base
   validates :name, :locales => :all,
                    :presence => true,
                    :uniqueness => true
+
+  # public methods
+  def to_s
+    name
+  end
 end
