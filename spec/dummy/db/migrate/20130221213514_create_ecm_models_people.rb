@@ -1,19 +1,19 @@
 class CreateEcmModelsPeople < ActiveRecord::Migration
   def change
     create_table :ecm_models_people do |t|
-      I18n.available_locales.map(&:to_s).sort.each do |locale|
-        t.text "acting_experience_#{locale}".to_sym
-        t.text "activities_#{locale}".to_sym
-        t.text "dialects_#{locale}".to_sym
-        t.text "education_#{locale}".to_sym
-        t.text "features_#{locale}".to_sym
-        t.text "fine_arts_gifts_#{locale}".to_sym
-        t.text "hobbies_#{locale}".to_sym
-        t.text "internal_notes_#{locale}".to_sym
-        t.text "location_#{locale}".to_sym
-        t.text "musical_education_#{locale}".to_sym
-        t.text "notes_#{locale}".to_sym
-        t.text "profession_#{locale}".to_sym
+      t.translate_columns do |tc|
+        tc.text :acting_experience
+        tc.text :activities
+        tc.text :dialects
+        tc.text :education
+        tc.text :features
+        tc.text :fine_arts_gifts
+        tc.text :hobbies
+        tc.text :internal_notes
+        tc.text :location
+        tc.text :musical_education
+        tc.text :notes
+        tc.text :profession
       end
 
       t.date    :birthdate

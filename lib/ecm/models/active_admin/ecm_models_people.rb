@@ -37,7 +37,7 @@ ActiveAdmin.register Ecm::Models::Person do
     end # f.inputs
 
     f.inputs Ecm::Models::Person.human_attribute_name(:personal_data) do
-      f.input :birthdate
+      f.input :birthdate, :as => :datepicker
       f.input :identifier
       f.input :firstname
       f.input :lastname
@@ -59,7 +59,7 @@ ActiveAdmin.register Ecm::Models::Person do
       f.input :waist_size
     end # f.inputs
 
-    f.translate_inputs do |ti|
+    f.translate_inputs :locales => [ :de, :en, :es ] do |ti|
       f.inputs do
         ti.input :acting_experience
         ti.input :activities
@@ -73,8 +73,8 @@ ActiveAdmin.register Ecm::Models::Person do
         ti.input :musical_education
         ti.input :notes
         ti.input :profession
-      end # f.translate_inputs
-    end # f.inputs
+      end # f.inputs
+    end # f.translate_inputs
 
     f.actions
   end # form

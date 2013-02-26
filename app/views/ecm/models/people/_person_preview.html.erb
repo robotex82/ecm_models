@@ -1,0 +1,40 @@
+<div class="ecm_models_person" id="<%= person.to_param %>">
+  <h2><%= person.identifier %></h2>
+
+  <dl>
+    <%= content_tag(:dt, Ecm::Models::Person.human_attribute_name(:firstname)) %>
+    <%= content_tag(:dd, person.firstname) %>
+
+    <%= content_tag(:dt, Ecm::Models::Person.human_attribute_name(:age)) %>
+    <%= content_tag(:dd, person.age) %>
+
+    <%= content_tag(:dt, Ecm::Models::Person.human_attribute_name(:eye_color)) %>
+    <%= content_tag(:dd, person.eye_color) %>
+
+    <%= content_tag(:dt, Ecm::Models::Person.human_attribute_name(:hair_color)) %>
+    <%= content_tag(:dd, person.hair_color) %>
+
+    <%= content_tag(:dt, Ecm::Models::Person.human_attribute_name(:skin_type)) %>
+    <%= content_tag(:dd, person.skin_type) %>
+  </dl>
+
+  <h2><%= Ecm::Models::Person.human_attribute_name(:measurements) %></h2>
+
+  <dl>
+    <%= content_tag(:dt, Ecm::Models::Person.human_attribute_name(:height)) %>
+    <%= content_tag(:dd, person.height) %>
+
+    <%= content_tag(:dt, Ecm::Models::Person.human_attribute_name(:bust_size)) %>
+    <%= content_tag(:dd, person.bust_size) %>
+
+    <%= content_tag(:dt, Ecm::Models::Person.human_attribute_name(:waist_size)) %>
+    <%= content_tag(:dd, person.waist_size) %>
+
+    <%= content_tag(:dt, Ecm::Models::Person.human_attribute_name(:hips_size)) %>
+    <%= content_tag(:dd, person.hips_size) %>
+
+    <%= content_tag(:dt, Ecm::Models::Person.human_attribute_name(:shoe_size)) %>
+    <%= content_tag(:dd, person.shoe_size) %>
+  </dl>
+</div>
+

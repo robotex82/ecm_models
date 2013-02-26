@@ -1,0 +1,21 @@
+.ecm_models_person {
+  dl {
+    dt, dd {
+      display: inline;
+      margin: 0; 
+    }
+
+    dt {
+      font-weight: bold;
+    }
+
+    dt:after {
+      content: ":";
+    }
+
+    dd:after {
+	    content: "\A";
+	    white-space: pre;
+    }
+  }
+}

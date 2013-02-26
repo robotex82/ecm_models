@@ -10,6 +10,8 @@ en:
       ecm/models/hair_color: 
         name: name
       ecm/models/person: 
+        acting_experience: acting experience 
+        acting_experience_de: acting experience 
         birthdate: birthdate
         breast_size: "chest measurement"
         category: category

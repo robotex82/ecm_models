@@ -139,7 +139,6 @@ ActiveRecord::Schema.define(:version => 20130221213514) do
     t.string   "phone"
     t.integer  "shoe_size"
     t.boolean  "visible",              :default => true
-    t.boolean  "boolean",              :default => true
     t.text     "websites"
     t.integer  "category_id"
     t.integer  "gender_id"

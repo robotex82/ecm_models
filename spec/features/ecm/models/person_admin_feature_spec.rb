@@ -1,3 +1,4 @@
+# encoding: utf-8
 require 'spec_helper'
 
 feature 'Ecm::Models::Person admin' do
@@ -12,7 +13,7 @@ feature 'Ecm::Models::Person admin' do
   end
 
   def set_resource_path
-    @resource_path = "personen"
+    @resource_path = "models"
   end
 
   def set_resource_class
@@ -36,19 +37,15 @@ feature 'Ecm::Models::Person admin' do
   end
 
   def fill_new_form
-#    select @category.to_s,   :from => "ecm_models_person[category_id]"
-#    select @eye_color.to_s,  :from => "ecm_models_person[eye_color_id]"
-#    select @gender.to_s,     :from => "ecm_models_person[gender_id]"
-#    select @hair_color.to_s, :from => "ecm_models_person[hair_color_id]"
-#    select @skin_type.to_s,  :from => "ecm_models_person[skin_type_id]"
     choose @category.to_s
     choose @eye_color.to_s
     choose @gender.to_s
     choose @hair_color.to_s
     choose @skin_type.to_s
-    select 5.years.ago.strftime("%d"),           :from => "ecm_models_person[birthdate(3i)]"
-    select I18n.l(5.years.ago, :format => "%B"), :from => "ecm_models_person[birthdate(2i)]"
-    select 5.years.ago.strftime("%Y"),           :from => "ecm_models_person[birthdate(1i)]"
+    fill_in "ecm_models_person[birthdate]", :with => 20.years.ago.strftime("%Y-%m-%d")
+#    select 5.years.ago.strftime("%d"),           :from => "ecm_models_person[birthdate(3i)]"
+#    select I18n.l(5.years.ago, :format => "%B"), :from => "ecm_models_person[birthdate(2i)]"
+#    select 5.years.ago.strftime("%Y"),           :from => "ecm_models_person[birthdate(1i)]"
     fill_in "ecm_models_person[email]",      :with => "person@example.com"
     fill_in "ecm_models_person[firstname]",  :with => "Jane"
     fill_in "ecm_models_person[identifier]", :with => "0123456789"

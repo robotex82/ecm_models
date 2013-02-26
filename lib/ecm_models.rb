@@ -1,3 +1,4 @@
+require 'draper'
 require 'ecm/models/engine'
 require 'ecm/models/configuration'
 require 'ecm/models/routing'

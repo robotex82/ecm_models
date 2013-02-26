@@ -9,9 +9,11 @@ de:
         name: Name
       ecm/models/hair_color: 
         name: Name
-      ecm/models/person: 
+      ecm/models/person:
+        acting_experience: Schauspielerfahrung 
+        age: Alter
         birthdate: Geburtsdatum
-        breast_size: Brustumfang
+        bust_size: Brustumfang
         category: Kategorie
         collar_size: Kragenweite
         contact_data: Kontaktdaten
@@ -34,6 +36,7 @@ de:
         jeans_length: Jeanslänge
         jeans_width: Jeansweite
         lastname: Nachname
+        measurements: Maße
         mobile: Handynummer
         name: Name
         personal_data: "Persönliche Angaben"
@@ -74,5 +77,5 @@ de:
     ecm_models_eye_colors: model-augenfarben
     ecm_models_genders: geschlechter
     ecm_models_hair_colors: model-haarfarben
-    ecm_models_people: personen
+    ecm_models_people: models
     ecm_models_skin_types: model-hauttypen

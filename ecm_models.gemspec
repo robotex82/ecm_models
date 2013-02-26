@@ -16,6 +16,7 @@ Gem::Specification.new do |s|
   s.files = Dir["{app,config,db,lib}/**/*"] + ["MIT-LICENSE", "Rakefile", "README.rdoc"]
 
   s.add_dependency "rails", "~> 3.2.12"
+  s.add_dependency 'draper', '~> 1.0'
 
   # Development Database
   s.add_development_dependency "sqlite3"
@@ -39,7 +40,7 @@ Gem::Specification.new do |s|
   s.add_development_dependency 'capybara'
   s.add_development_dependency 'rspec-rails'
   s.add_development_dependency 'shoulda-matchers'
-  s.add_development_dependency 'factory_girl_rails', '~> 1.0'
+  s.add_development_dependency 'factory_girl_rails'
 
   # Test automation
   s.add_development_dependency 'rb-inotify', '~> 0.8.8'
